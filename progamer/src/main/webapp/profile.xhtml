@@ -27,8 +27,12 @@
 				    
 				    <!-- DATA DE NASCIMENTO -->
 				    <div class="p-field p-col-12 p-md-4">
-		                <p:outputLabel for="birthDate" value="Birth Date"/>
-		                <p:datePicker id="birthDate" value="#{profileBean.profile.birthDate}" pattern="dd.MM.yyyy"/>		
+				    	<label for="birthDate" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Birth Date</label>
+		                <div class="p-col-12 p-md-10">
+			                <p:datePicker id="birthDate" value="#{profileBean.profile.birthDate}" required="true" pattern="dd.MM.yyyy">
+			                	<f:ajax event="blur" render="messages" />
+			                </p:datePicker>
+		                </div>		
 		            </div>
 		            
 		            <!-- E-MAIL -->
