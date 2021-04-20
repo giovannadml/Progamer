@@ -33,7 +33,5 @@ public class SetupBean {
 	public void setSetup(Setup setup) {
 		this.setup = setup;
 	}
-	
-	
 
 }

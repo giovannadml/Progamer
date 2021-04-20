@@ -41,8 +41,7 @@
 						<div class="p-field p-grid">
 							<label for="email" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">E-mail</label>
 							<div class="p-col-12 p-md-10">
-								<p:inputText id="email" type="text"
-									value="#{userBean.user.email}" required="true">
+								<p:inputText id="email" type="text" value="#{userBean.user.email}" required="true">
 									<f:ajax event="blur" render="messages" />
 								</p:inputText>
 							</div>
@@ -50,12 +49,11 @@
 	
 						<!-- SENHA -->
 						<div class="p-field p-grid">
-							<label for="password" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Password</label>
+							<label for="feedback" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Password</label>
 							<div class="p-col-12 p-md-10">
-								<p:inputText id="password" type="password"
-									value="#{userBean.user.password}" required="true">
-									<f:ajax event="blur" render="messages" />
-								</p:inputText>
+								 <p:password id="feedback" value="#{userBean.user.password}" feedback="true" required="true">
+								 	<f:ajax event="blur" render="messages" />
+								 </p:password>
 							</div>
 						</div>
 	

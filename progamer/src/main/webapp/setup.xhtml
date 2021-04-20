@@ -34,7 +34,7 @@
 				    <div class="p-field p-grid">
 				        <label for="price" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Price</label>
 				        <div class="p-col-12 p-md-10">
-				            <p:inputText id="price" value="#{setupBean.setup.price}">
+				            <p:inputText id="price" value="#{setupBean.setup.price}" required="true">
 				            	<f:validateDoubleRange minimum="0" />
 				            	<f:ajax event="blur" render="messages" />
 				            </p:inputText>

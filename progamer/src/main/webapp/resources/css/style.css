@@ -57,18 +57,24 @@ body{
     margin-bottom: 2rem;
 }
 
-.setup-grid-item card border-1{
+.setup-grid-item{
     border: 1px solid #dee2e6;
+    background: #dee2e6;
+    padding: 2rem;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 2rem;
 }
 
 .border-1 .setup-grid-item-content{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .setup-grid-item-content img{
-	width: 75%;
+	width: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin: 2rem 0;
 }
@@ -85,7 +91,8 @@ body{
 .border-1 .setup-grid-item-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
 .setup-grid-item .setup-price {
@@ -102,3 +109,4 @@ body{
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
+
